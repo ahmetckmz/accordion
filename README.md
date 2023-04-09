@@ -1,0 +1,1 @@
+# Doing simple accordion with javascript

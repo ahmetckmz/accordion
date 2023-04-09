@@ -1,0 +1,50 @@
+:root {
+    --secondary-color: #ffc300;
+    --light-color: #77716a;
+    --primary-color: #0b8a1c;
+    --general-transition: all 0.4s ease;
+  }
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 100px 0;
+    font-family: Arial, Tahoma;
+  }
+  .container h1{
+    text-align:center;
+    color: var(--primary-color);
+    
+  }
+  .accordion {
+    width: 100%;
+    padding: 25px;
+    border: none;
+    outline: none;
+    background-color: var(--secondary-color);
+    font-size: 18px;
+    text-align: left;
+    cursor: pointer;
+    transition: var(--general-transition);
+  }
+  .accordion:hover {
+    background-color: var(--light-color);
+  }
+  .accordion:after {
+    content: "\002B";
+    float: right;
+    color: #fff;
+  }
+  .active:after {
+    content: "\2212";
+    float: right;
+    color: #fff;
+  }
+  .desc {
+    padding: 0 15px;
+    height: 0;
+    overflow: hidden;
+    transition: var(--general-transition);
+    border: 1px solid black;
+    border-top: none;
+  }
+  
